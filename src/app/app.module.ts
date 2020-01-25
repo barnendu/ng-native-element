@@ -18,8 +18,8 @@ import { CustomCompComponent } from './custom-comp/custom-comp.component';
 })
 export class AppModule { 
   constructor(private injector: Injector) {
-    const vasMap = createCustomElement(CustomCompComponent, { injector });
-    customElements.define('ng-native-ele', vasMap);
+    const casMap = createCustomElement(CustomCompComponent, { injector });
+    customElements.define('ng-native-ele', casMap);
   }
 
   ngDoBootstrap() {}
